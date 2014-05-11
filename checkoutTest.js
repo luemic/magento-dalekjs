@@ -1,5 +1,15 @@
+/**
+ * @author      Michael Lühr <michael.luehr@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 var url = 'http://mage-hackathon.dev/';
 var waitAfterClick = 3000;
+
+/**
+ * tests that adding a product to the cart, process a guest checkout and finally places an order
+ */
 module.exports = {
     'Page title is correct': function (test) {
         test
