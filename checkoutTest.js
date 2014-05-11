@@ -10,9 +10,11 @@ module.exports = {
     'Magento Furniture' : function (test) {
         test
             .open(url)
-            .click('.level-top')
+            .waitForElement('.level-top')
+            .click('.level-top span')
             .wait(waitAfterClick)
             .assert.title().is('Furniture', 'title')
+            .screenshot('phantomjs.png')
             .done()
     },
     'Add Ottoman to cart and proceed with checkout' : function (test) {
