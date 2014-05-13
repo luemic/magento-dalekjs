@@ -33,8 +33,8 @@ module.exports = {
             .execute(function() {$('login:guest').setValue(true);})
             .click('#onepage-guest-register-button')
             .wait(waitAfterClick)
-//          set value does not work for some reason
-//            .setValue('#billing:firstname', 'Firstname')
+//          set type does not work for some reason
+//            .type('#billing:firstname', 'Firstname')
             .execute(function() {
                 // workaround because setValue did not work properly
                 type = 'billing';
