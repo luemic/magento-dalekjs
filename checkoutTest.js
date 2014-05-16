@@ -33,22 +33,16 @@ module.exports = {
             .execute(function() {$('login:guest').setValue(true);})
             .click('#onepage-guest-register-button')
             .wait(waitAfterClick)
-//          set type does not work for some reason
-//            .type('#billing:firstname', 'Firstname')
-            .execute(function() {
-                // workaround because setValue did not work properly
-                type = 'billing';
-                $(type +':firstname').setValue('Firstname');
-                $(type +':lastname').setValue('Lastname');
-                $(type +':email').setValue('test@test.com');
-                $(type +':street1').setValue('Teststreet 1');
-                $(type +':city').setValue('Testcity');
-                $(type +':postcode').setValue('11111');
-                $(type +':country_id').setValue('DE');
-                billingRegionUpdater.update();
-                $(type +':region_id').setValue(91);
-                $(type +':telephone').setValue('1234567');
-            })
+            // for some reason dalekjs doesn't work with the billing:* ids
+            .type('#billing-new-address-form input[name*=firstname]', 'Firstname')
+            .type('#billing-new-address-form input[name*=lastname]', 'Lastname')
+            .type('#billing-new-address-form input[name*=email]', 'test@test.com')
+            .type('#billing-new-address-form input[id*=street1]', 'teststreet 1')
+            .type('#billing-new-address-form input[id*=city]', 'Testcity')
+            .type('#billing-new-address-form input[id*=postcode]', '1111')
+            .type('#billing-new-address-form select[id*=country_id]', 'Deutsch')
+            .type('#billing-new-address-form select[id*=region_id]', 'Sachsen')
+            .type('#billing-new-address-form input[id*=telephone]', '123456789')
             .click('#billing-buttons-container.buttons-set button.button')
             .wait(waitAfterClick)
             .click('#shipping-method-buttons-container.buttons-set button.button')
