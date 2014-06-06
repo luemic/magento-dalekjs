@@ -7,7 +7,7 @@
 var url = 'http://mage-hackathon.dev/admin';
 var waitAfterClick = 3000;
 var adminUser = 'admin';
-var adminLogin = 'password';
+var adminLogin = 'admin123';
 /**
  * test that opens Magento backend, goes to system -> configuration -> payment methods
  * and checks for zero subtotal checkout
