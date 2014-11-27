@@ -75,7 +75,7 @@ checkout:
     fax: '1234/1231280'
 #Settings for the adminbackend
 admin:
-  url: 'regina'
-  username: 'darwin'
-  password: '2mEnde7'
+  url: 'admin'
+  username: 'username'
+  password: 'password'
 
