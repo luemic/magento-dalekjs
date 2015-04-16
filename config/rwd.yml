@@ -1,0 +1,81 @@
+url: 'http://mogg.local'
+# Settings for the homepage test
+topCategorys: !!seq [ Women, Men, Accessories, Sale, VIP ]
+categorys:
+  default:
+    Women: !!seq
+      - New Arrivals
+      - Tops & Blouses
+      - Pants & Denim
+      - Dresses & Skirts
+    Men:
+    Accessories:
+    Home & Decor:
+    Sale:
+    VIP:
+  german:
+    Women: !!seq
+      - New Arrivals
+      - Tops & Blouses
+      - Pants & Denim
+      - Dresses & Skirts
+    Men:
+    Accessories:
+    Home & Decor:
+    Verkauf:
+    VIP:
+#Search Test
+searchTerm: 'linen'
+foundItemCount: 2
+#CMS Test
+cmsPage: 'about-magento-demo-store'
+cmsTitle: 'About Us'
+cmsHeadline: 'OUR STORY'
+
+account:
+  label: 'My Account'
+  loginOrCreatePageHeadline: 'LOGIN OR CREATE AN ACCOUNT'
+  loginOrCreatePageTitle: 'Customer Login'
+  registrationPageTitle: 'Create New Customer Account'
+  registrationHeader: 'CREATE AN ACCOUNT'
+  registrationRequiredFields:
+    - firstname
+    - lastname
+    - email_address
+    - password
+    - confirmation
+  addNewAddressTitle: 'Add New Address'
+  customer:
+    firstname: 'Richard John'
+    lastname: 'Rebekka'
+    email: 'testorder'
+    password: 'secret'
+    telephone: '12341234'
+    street: 'Customer Street 1b'
+    zip: '12345'
+    city: 'Kohlestadt'
+    country: 'DE'
+    regionID: '2'
+  passwordMessage: 'Please enter 6 or more characters. Leading or trailing spaces will be ignored.'
+  passwordDontMatch: 'Please make sure your passwords match.'
+#Settings for checkout-test
+checkout:
+  simpleProductToBuy: '/jackie-o-round-sunglasses.html'
+  guest:
+    firstname: 'Otto'
+    lastname: 'Gastbesteller'
+    company: 'Gästfirmü'
+    email: 'testordner@example.com'
+    street1: 'Gaststraße'
+    street2: 'zusatzinfo'
+    city: 'Guest Town'
+    region: '1'
+    postcode: '51234'
+    telephone: '1234-123123'
+    fax: '1234/1231280'
+#Settings for the adminbackend
+admin:
+  url: 'admin'
+  username: 'username'
+  password: 'password'
+
