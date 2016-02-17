@@ -1,0 +1,47 @@
+waitForClick: 3000
+'HomePage':
+  url: 'http://mage-1901-lab.dev/'
+  title: 'Madison Island'
+  resolutions:
+    1200x1024:
+      width: 1200
+      height: 1024
+      selectors:
+        '#nav': 1
+        '#nav ol li': 6
+        '.slideshow': 1
+#    781x781:
+#      width: 781
+#      height: 781
+#      '#nav': 1
+#      '#nav ol li': 6
+#      '.slideshow': 1
+#    480x480:
+#      width: 781
+#      height: 781
+#      '#nav': 1
+#      '#nav ol li': 6
+#      '.slideshow': 1'HomePage':
+Category:
+  url: 'http://mage-1901-lab.dev/women/dresses-skirts.html'
+  title: 'Dresses & Skirts - Women'
+  resolutions:
+    1200x1024:
+      width: 1200
+      height: 1024
+      selectors:
+        '#nav': 1
+        '#nav ol li': 6
+        '.slideshow': 1
+#    781x781:
+#      width: 781
+#      height: 781
+#      '#nav': 1
+#      '#nav ol li': 6
+#      '.slideshow': 1
+#    480x480:
+#      width: 781
+#      height: 781
+#      '#nav': 1
+#      '#nav ol li': 6
+#      '.slideshow': 1
